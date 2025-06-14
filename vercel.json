@@ -1,8 +1,9 @@
 {
-  "framework": "nextjs",
-  "buildCommand": "next build",
-  "installCommand": "npm install",
-  "env": {
-    "GOOGLE_APPS_SCRIPT_URL": "@google_apps_script_url"
-  }
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "runtime": "nodejs18.x",
+      "maxDuration": 30
+    }
+  },
+  "buildCommand": "next build"
 }
