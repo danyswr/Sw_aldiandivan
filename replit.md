@@ -134,6 +134,8 @@ EcoMarket is a modern e-commerce platform built with React and Express, designed
 - June 14, 2025. Resolved user ID mapping issues between login data and spreadsheet data
 - June 14, 2025. Fixed seller dashboard to properly display products and orders using UUID mapping
 - June 14, 2025. Migrated from Vite to Next.js App Router structure for Vercel hosting compatibility
+- June 14, 2025. Fixed Vercel deployment issues by converting all config files to ES module syntax (.mjs)
+- June 14, 2025. Updated configuration files for proper Next.js deployment with ES module compatibility
 
 ## User Preferences
 
