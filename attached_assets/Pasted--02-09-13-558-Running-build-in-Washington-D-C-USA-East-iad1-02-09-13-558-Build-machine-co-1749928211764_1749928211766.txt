@@ -1,0 +1,42 @@
+[02:09:13.558] Running build in Washington, D.C., USA (East) – iad1
+[02:09:13.558] Build machine configuration: 2 cores, 8 GB
+[02:09:13.571] Cloning github.com/danyswr/Sw_aldiandivan (Branch: main, Commit: 71b0ae5)
+[02:09:13.758] Previous build caches not available
+[02:09:13.884] Cloning completed: 312.000ms
+[02:09:14.325] Running "vercel build"
+[02:09:14.837] Vercel CLI 42.2.0
+[02:09:15.180] Running "install" command: `npm install`...
+[02:09:21.976] npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+[02:09:22.025] npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+[02:09:36.328] 
+[02:09:36.329] added 730 packages, and audited 731 packages in 21s
+[02:09:36.330] 
+[02:09:36.330] 176 packages are looking for funding
+[02:09:36.330]   run `npm fund` for details
+[02:09:36.363] 
+[02:09:36.364] 8 vulnerabilities (1 low, 7 moderate)
+[02:09:36.364] 
+[02:09:36.364] To address issues that do not require attention, run:
+[02:09:36.364]   npm audit fix
+[02:09:36.365] 
+[02:09:36.365] To address all issues (including breaking changes), run:
+[02:09:36.365]   npm audit fix --force
+[02:09:36.365] 
+[02:09:36.365] Run `npm audit` for details.
+[02:09:36.448] Detected Next.js version: 15.3.3
+[02:09:36.449] Running "next build"
+[02:09:37.065]  ⚠ Invalid next.config.mjs options detected: 
+[02:09:37.065]  ⚠     Unrecognized key(s) in object: 'appDir' at "experimental"
+[02:09:37.066]  ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+[02:09:37.078] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[02:09:37.079] This information is used to shape Next.js' roadmap and prioritize features.
+[02:09:37.079] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[02:09:37.079] https://nextjs.org/telemetry
+[02:09:37.079] 
+[02:09:37.143]    ▲ Next.js 15.3.3
+[02:09:37.143] 
+[02:09:37.211]  ⨯ Conflicting app and page file was found, please remove the conflicting files to continue:
+[02:09:37.211]  ⨯   "pages/auth.tsx" - "app/auth/page.tsx"
+[02:09:37.473] Error: Command "next build" exited with 1
+[02:09:37.838] 
+[02:09:40.611] Exiting build container
