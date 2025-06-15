@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/lib/auth";
 import { makeAPICall, formatPrice } from "@/lib/api";
-import { orderFormSchema, type OrderForm } from "@/lib/schema";
+
 import { ImageIcon } from "lucide-react";
 import { z } from "zod";
 

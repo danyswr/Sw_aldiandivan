@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/auth/register/route": "/api/auth/register",
+  "/api/auth/login/route": "/api/auth/login",
+  "/api/orders/route": "/api/orders",
+  "/api/products/route": "/api/products",
+  "/page": "/",
+  "/seller/page": "/seller",
+  "/orders/page": "/orders",
+  "/buyer/page": "/buyer",
+  "/auth/page": "/auth"
+}

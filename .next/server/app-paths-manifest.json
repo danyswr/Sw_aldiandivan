@@ -1,3 +1,12 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/orders/route": "app/api/orders/route.js",
+  "/api/products/route": "app/api/products/route.js",
+  "/page": "app/page.js",
+  "/seller/page": "app/seller/page.js",
+  "/orders/page": "app/orders/page.js",
+  "/buyer/page": "app/buyer/page.js",
+  "/auth/page": "app/auth/page.js"
 }
