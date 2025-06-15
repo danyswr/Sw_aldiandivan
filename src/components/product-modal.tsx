@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/lib/auth";
 import { makeAPICall, fileToBase64 } from "@/lib/api";
-import { insertProductSchema, type InsertProduct } from "@shared/schema";
+import { insertProductSchema, type InsertProduct } from "@/lib/schema";
 import { Upload, X } from "lucide-react";
 
 interface ProductModalProps {

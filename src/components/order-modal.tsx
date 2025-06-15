@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/lib/auth";
 import { makeAPICall, formatPrice } from "@/lib/api";
-import { insertOrderSchema, type InsertOrder } from "@shared/schema";
+import { orderFormSchema, type OrderForm } from "@/lib/schema";
 import { ImageIcon } from "lucide-react";
 import { z } from "zod";
 
@@ -19,11 +19,7 @@ interface OrderModalProps {
   product: any[] | null; // Product array from Google Sheets
 }
 
-const orderFormSchema = z.object({
-  quantity: z.number().min(1, "Jumlah minimal 1"),
-});
 
-type OrderForm = z.infer<typeof orderFormSchema>;
 
 export function OrderModal({ isOpen, onClose, product }: OrderModalProps) {
   const { toast } = useToast();
