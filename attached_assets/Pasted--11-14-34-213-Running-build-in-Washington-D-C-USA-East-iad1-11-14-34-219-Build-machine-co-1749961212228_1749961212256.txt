@@ -1,0 +1,58 @@
+[11:14:34.213] Running build in Washington, D.C., USA (East) – iad1
+[11:14:34.219] Build machine configuration: 2 cores, 8 GB
+[11:14:34.295] Cloning github.com/danyswr/Sw_aldiandivan (Branch: main, Commit: 2620979)
+[11:14:34.898] Previous build caches not available
+[11:14:35.961] Cloning completed: 1.662s
+[11:14:36.658] Running "vercel build"
+[11:14:37.125] Vercel CLI 42.2.0
+[11:14:37.450] Running "install" command: `npm install`...
+[11:14:54.559] 
+[11:14:54.559] added 534 packages, and audited 535 packages in 17s
+[11:14:54.559] 
+[11:14:54.559] 165 packages are looking for funding
+[11:14:54.559]   run `npm fund` for details
+[11:14:54.561] 
+[11:14:54.561] 1 low severity vulnerability
+[11:14:54.562] 
+[11:14:54.562] To address all issues, run:
+[11:14:54.562]   npm audit fix
+[11:14:54.562] 
+[11:14:54.563] Run `npm audit` for details.
+[11:14:54.760] Detected Next.js version: 15.3.3
+[11:14:54.761] Running "next build"
+[11:14:56.068]    ▲ Next.js 15.3.3
+[11:14:56.068]    - Environments: .env.local
+[11:14:56.068] 
+[11:14:56.268]    Creating an optimized production build ...
+[11:15:01.891] Failed to compile.
+[11:15:01.892] 
+[11:15:01.892] ./src/app/auth/page.tsx
+[11:15:01.892] Module not found: Can't resolve '../../../pages/auth'
+[11:15:01.892] 
+[11:15:01.892] https://nextjs.org/docs/messages/module-not-found
+[11:15:01.893] 
+[11:15:01.893] ./src/app/buyer/page.tsx
+[11:15:01.893] Module not found: Can't resolve '../../../pages/buyer-dashboard'
+[11:15:01.893] 
+[11:15:01.894] https://nextjs.org/docs/messages/module-not-found
+[11:15:01.894] 
+[11:15:01.894] ./src/app/orders/page.tsx
+[11:15:01.894] Module not found: Can't resolve '../../../pages/buyer-orders'
+[11:15:01.894] 
+[11:15:01.895] https://nextjs.org/docs/messages/module-not-found
+[11:15:01.895] 
+[11:15:01.895] ./src/app/page.tsx
+[11:15:01.895] Module not found: Can't resolve '../../pages/landing'
+[11:15:01.895] 
+[11:15:01.896] https://nextjs.org/docs/messages/module-not-found
+[11:15:01.896] 
+[11:15:01.896] ./src/app/seller/page.tsx
+[11:15:01.896] Module not found: Can't resolve '../../../pages/seller-dashboard'
+[11:15:01.896] 
+[11:15:01.897] https://nextjs.org/docs/messages/module-not-found
+[11:15:01.897] 
+[11:15:01.902] 
+[11:15:01.903] > Build failed because of webpack errors
+[11:15:01.925] Error: Command "next build" exited with 1
+[11:15:02.330] 
+[11:15:04.996] Exiting build container
