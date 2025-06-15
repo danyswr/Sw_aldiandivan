@@ -1,4 +1,5 @@
-import { Link, useLocation } from "wouter";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -21,7 +22,7 @@ interface NavbarProps {
 
 export function Navbar({ onSearch }: NavbarProps) {
   const { user, isAuthenticated, logout } = useAuth();
-  const [location] = useLocation();
+  const pathname = usePathname();
   const [searchQuery, setSearchQuery] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -58,7 +59,7 @@ export function Navbar({ onSearch }: NavbarProps) {
               <Link
                 href={user?.role === "buyer" ? "/buyer" : "/seller"}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  location === (user?.role === "buyer" ? "/buyer" : "/seller")
+                  pathname === (user?.role === "buyer" ? "/buyer" : "/seller")
                     ? "bg-primary/10 text-primary shadow-sm"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                 }`}
@@ -70,7 +71,7 @@ export function Navbar({ onSearch }: NavbarProps) {
                 <Link
                   href="/orders"
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                    location === "/orders"
+                    pathname === "/orders"
                       ? "bg-primary/10 text-primary shadow-sm"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                   }`}
@@ -174,7 +175,7 @@ export function Navbar({ onSearch }: NavbarProps) {
                 <Link
                   href={user?.role === "buyer" ? "/buyer" : "/seller"}
                   className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    location === (user?.role === "buyer" ? "/buyer" : "/seller")
+                    pathname === (user?.role === "buyer" ? "/buyer" : "/seller")
                       ? "bg-primary/10 text-primary"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                   }`}
@@ -188,7 +189,7 @@ export function Navbar({ onSearch }: NavbarProps) {
                     <Link
                       href="/orders"
                       className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                        location === "/orders"
+                        pathname === "/orders"
                           ? "bg-primary/10 text-primary"
                           : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                       }`}
